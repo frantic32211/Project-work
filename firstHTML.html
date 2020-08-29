@@ -13,14 +13,16 @@
         #marks, th, td {
             border: 2px solid black;
             border-collapse: collapse;
-            text-align: center;
             background-color: black;
             font-size: 20px;
             padding: 8px;
             outline: 5px solid orangered;
         }
-        .head {
-            color: orangered;
+        .leftSide {
+            text-align:left;
+        }
+        .rightSide {
+            text-align: right;
         }
         .aboutHtml {
             padding: 20px;
@@ -91,25 +93,25 @@
     <div class="marks">
     <table id = "result">
         <tr>
-            <th class="head">Subjects</th>
-            <th class="head">Marks(out of 150)</th>
+            <th class="leftSide">Subjects</th>
+            <th class="rightSide">Marks(out of 150)</th>
         </tr>
 
         <tr>
-            <td>Mathematics II</td>
-            <td>112</td>
+            <td class="leftSide">Mathematics II</td>
+            <td class="rightSide">112</td>
         </tr>
         <tr>
-            <td>Chemistry</td>
-            <td>106</td>
+            <td class="leftSide">Chemistry</td>
+            <td class="rightSide">106</td>
         </tr>
         <tr>
-            <td>PPS</td>
-            <td>111</td>
+            <td class="leftSide">PPS</td>
+            <td class="rightSide">111</td>
         </tr>
         <tr>
-            <td>Prof. English</td>
-            <td>108</td>
+            <td class="leftSide">Prof. English</td>
+            <td class="rightSide">108</td>
         </tr>
     </table>
     </div>
