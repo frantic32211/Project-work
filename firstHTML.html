@@ -10,7 +10,7 @@
             margin: 25px 100px;
             color: white;
         }
-        table, th, td {
+        #marks, th, td {
             border: 2px solid black;
             border-collapse: collapse;
             text-align: center;
@@ -18,6 +18,9 @@
             font-size: 20px;
             padding: 8px;
             outline: 5px solid orangered;
+        }
+        .head {
+            color: orangered;
         }
         .aboutHtml {
             padding: 20px;
@@ -85,10 +88,10 @@
     </div>
     <br>
     <div class="marks">
-    <table>
+    <table id = "result">
         <tr>
-            <th>Subjects</th>
-            <th>Marks(out of 150)</th>
+            <th class="head">Subjects</th>
+            <th class="head">Marks(out of 150)</th>
         </tr>
 
         <tr>
