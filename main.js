@@ -10,3 +10,10 @@ let value = array[3].toString()
 printArray.innerHTML = value
 
 console.log(`array at index 3 is a ${typeof value}`);
+
+var variableOne = 40;
+
+var variableTwo = "virtual"
+
+console.log(variableOne);
+console.log(variableTwo);
