@@ -1,16 +1,16 @@
-function averageMarks()  {
-var sum =0;
+var submitPage = document.querySelector("#formFill");
+submitPage.addEventListener("submit", (e) => {
+    e.preventDefault();
+})
 
-for (let i=1; i<=4; i++) {
+var nameOfUser = document.querySelector("#Name");
 
-    var marks = document.getElementById(`val${i}`).textContent
-    sum = sum + parseInt(marks)
+function myfun() {
+    var re = /^[a-zA-Z]+/;
+    var res = re.test(nameOfUser.value);
+    if (!res) {
+         return alert("Only alphabets allowed!");
+    }
+
 }
 
-var avg = sum/4
-
-document.getElementById("totalMarks").innerHTML = sum
-document.getElementById("average").innerHTML = avg
-}
-
-averageMarks();
