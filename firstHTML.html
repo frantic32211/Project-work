@@ -18,12 +18,6 @@
         tr:nth-child(odd) {
             background-color: black;
         }
-        .leftSide {
-            text-align:left;
-        }
-        .rightSide {
-            text-align: right;
-        }
         .aboutHtml {
             padding: 20px;
             border: 2px solid black;
@@ -36,10 +30,6 @@
             padding: 20px;
             border: 2px solid black;
         }     
-        .marks {
-            padding: 20px;
-            border: 2px solid black;
-        }   
         .container {
             width: 100%;
             height: 40px;
@@ -105,27 +95,37 @@
     <table id = "result">
         <tr>
             <th class="leftSide">Subjects</th>
-            <th class="rightSide">Marks(out of 150)</th>
+            <th >Marks(out of 150)</th>
         </tr>
 
         <tr>
             <td class="leftSide">Mathematics II</td>
-            <td class="rightSide">112</td>
+            <td id="val1">112</td>
         </tr>
         <tr>
             <td class="leftSide">Chemistry</td>
-            <td class="rightSide">106</td>
+            <td id="val2">106</td>
         </tr>
         <tr>
             <td class="leftSide">PPS</td>
-            <td class="rightSide">111</td>
+            <td id="val3">111</td>
         </tr>
         <tr>
             <td class="leftSide">Prof. English</td>
-            <td class="rightSide">108</td>
+            <td id="val4">108</td>
+        </tr>
+        <tr>
+            <td class = "leftSide" >Total Marks</td>
+            <td id = "totalMarks"></td>
+        </tr>
+        <tr>
+            <td class = "leftSide" >Average</td>
+            <td id = "average"></td>
         </tr>
     </table>
     </div>
+
+    <script src="main.js"></script>
 
 </body>
 </html>

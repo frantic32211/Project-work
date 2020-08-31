@@ -1,19 +1,13 @@
-var info = document.querySelector("h2")
+var sum =0;
 
-info.textContent = "Javascript is a dynamic programming language that can add functionality and interactivity to a website. It has const, let and var datatypes which can store all type of values like integer, float, boolean, array,objects, etc."
+for (let i=1; i<=4; i++) {
 
-var printArray = document.querySelector("h1")
+    var marks = document.getElementById(`val${i}`).textContent
+    sum = sum + parseInt(marks)
+}
 
-const array = [1,2,3,4,5]
+var avg = sum/4
 
-let value = array[3].toString()
-printArray.innerHTML = value
+document.getElementById("totalMarks").innerHTML = sum
+document.getElementById("average").innerHTML = avg
 
-console.log(`array at index 3 is a ${typeof value}`);
-
-var variableOne = 40;
-
-var variableTwo = "virtual"
-
-console.log(variableOne);
-console.log(variableTwo);
