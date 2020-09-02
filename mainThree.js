@@ -1,3 +1,20 @@
+var numb = 34;
+
+try {
+    if (numb>10 && numb<=20) throw "10 and 20";
+    if (numb>20 && numb<=30) throw "20 and 30";
+    if (numb>30 && numb<=40) throw "30 and 40";
+    if (numb>40 && numb<=50) throw "40 and 50";
+    if (numb>50 && numb<=60) throw "50 and 60";
+    if (numb>60 && numb<=70) throw "60 and 70";
+    if (numb>70 && numb<=80) throw "70 and 80";
+    if (numb>80 && numb<=90) throw "80 and 90";
+    if (numb>90 && numb<=100) throw "90 and 100";
+  
+} catch (err) {
+    console.log(`Number is between ${err}`)
+}
+
 
 var number = 54;
 
