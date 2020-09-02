@@ -15,3 +15,7 @@ console.log(Math.ceil(Math.random()*5));
 console.log(Math.sin(90 * Math.PI / 180));
 
 console.log(Math.cos(0 * Math.PI / 180));
+
+var date = new Date()
+
+console.log(date);
