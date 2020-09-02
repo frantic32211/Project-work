@@ -1,7 +1,7 @@
 function pageRedirectOne() {
     window.location.href = "firstHTML.html";
   }
-  
+
 function pageRedirectTwo() {
     window.location.href = "courses.html";
   }
@@ -10,6 +10,13 @@ function pageRedirectThree() {
     window.location.href = "submitted.html";
   }
 
+var des = document.querySelector("#text")
+
+const nthWord = des.textContent.split(' ');
+
+console.log(`The fifth word is ${nthWord[4]}`);
+console.log(`The seventh word is ${nthWord[6]}`);
+console.log(`The tenth word is ${nthWord[10]}`);
 
 // var nameOfUser = document.querySelector("#Name");
 // var phoneOfUser = document.querySelector("#phoneNumber");
