@@ -5,11 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form Submitted</title>
     <style>
-      body {
-        background-color: #a38d33;
-      }
     </style>
-    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+      $("#fadeinDetails").click(function(){
+        $("#div1").fadeIn();
+        $("#div2").fadeIn("slow");
+        $("#div3").fadeIn(1500);
+      });
+    });
+    $(document).ready(function(){
+      $("#fadeoutDetails").click(function(){
+        $("#div1").fadeOut();
+        $("#div2").fadeOut("slow");
+        $("#div3").fadeOut(1500);
+      });
+    });
+    $(document).ready(function(){
+  $("#toggleDetails").click(function(){
+    $("p").toggle();
+  });
+});
+$(document).ready(function(){
+  $("p").dblclick(function(){
+    $(this).fadeOut();
+  });
+});
+    </script>
   </head>
   <body>
     <p>Name: Shashikant Mishra</p>
@@ -20,19 +43,33 @@
     <p>Maths</p>
 
     <img class="logo" src="w3schools_green.jpg" alt="w3schools" />
+    <p>Double click on any line to disappear.</p>
     <br />
     <br />
     <br />
-    <button id = "hideDetails">Click to hide details</button>
-    <button id = "showDetails">Click to show details</button>
+    <button id="toggleDetails">Click to toggle details</button>
+    <br />
+    <br />
+    <button id="fadeinDetails">Click to fadin boxes</button>
+    <br />
+    <br />
+    <button id="fadeoutDetails">Click to fadeout boxes</button>
+    <br />
+    <br />
+    <div
+      id="div1"
+      style="width: 80px; height: 80px; display: none; background-color: red"
+    ></div>
+    <br />
+    <div
+      id="div2"
+      style="width: 80px; height: 80px; display: none; background-color: green"
+    ></div>
+    <br />
+    <div
+      id="div3"
+      style="width: 80px; height: 80px; display: none; background-color: blue"
+    ></div>
 
-    <script>
-      $("#hideDetails").click(function () {
-        $("p").hide("slow");
-      });
-      $("#showDetails").click(function () {
-        $("p").show(2000);
-      });
-    </script>
   </body>
 </html>
