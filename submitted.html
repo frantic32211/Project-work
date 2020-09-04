@@ -1,37 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form Submitted</title>
     <style>
-        body {
-            background-color: #a38d33;
-        }
+      body {
+        background-color: #a38d33;
+      }
     </style>
-</head>
-<body>
-    
-    <p>
-        Name: Shashikant Mishra
-    </p>
-    <p>
-        Phone Number: 9513782460
-    </p>   
-    <p>
-        Bachelors
-    </p>    
-    <p>
-        I study in xyz college
-    </p>    
-    <p>
-        Physics
-    </p>    
-    <p>
-        Maths
-    </p>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+  </head>
+  <body>
+    <p>Name: Shashikant Mishra</p>
+    <p>Phone Number: 9513782460</p>
+    <p>Bachelors</p>
+    <p>I study in xyz college</p>
+    <p>Physics</p>
+    <p>Maths</p>
 
-    <img class = "logo" src="w3schools_green.jpg" alt="w3schools">
+    <img class="logo" src="w3schools_green.jpg" alt="w3schools" />
+    <br />
+    <br />
+    <br />
+    <button id = "hideDetails">Click to hide details</button>
+    <button id = "showDetails">Click to show details</button>
 
-</body>
+    <script>
+      $("#hideDetails").click(function () {
+        $("p").hide("slow");
+      });
+      $("#showDetails").click(function () {
+        $("p").show(2000);
+      });
+    </script>
+  </body>
 </html>
