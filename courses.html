@@ -1,8 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#getReq").click(function () {
+          $.get("demo.asp", function (data, status) {
+             document.querySelector("h2").innerHTML =
+              `Data: ${data} Status: ${status}`;
+          });
+        });
+      });
+    </script>
+    <script>
+      $(document).ready(function(){
+        $("#postReq").click(function(){
+          $.post("demo2.asp",
+          {
+            name: "Donald Duck",
+            city: "Duckburg"
+          },
+          function(data,status){
+            alert("Data: " + data + "\nStatus: " + status);
+          });
+        });
+      });
+      </script>
     <title>My HTML Page</title>
     <style>
       body {
@@ -21,7 +46,7 @@
       .logo {
         float: left;
       }
-      .container{
+      .container {
         width: 250px;
         height: 200px;
         background-color: #c1c1c1;
@@ -44,72 +69,75 @@
       }
 
       #submit:hover {
-      color: hotpink;
+        color: hotpink;
       }
 
       #submit:active {
-      color: blue;
+        color: blue;
       }
 
-      ol>li {
+      ol > li {
         list-style-type: upper-roman;
         list-style-position: outside;
       }
 
-      ul>li {
+      ul > li {
         list-style-type: square;
         list-style-position: inside;
       }
     </style>
-</head>
-<body>
-  <img class = "logo" src="w3schools_green.jpg" alt="w3schools">
+  </head>
+  <body>
+    <img class="logo" src="w3schools_green.jpg" alt="w3schools" />
 
-  <h1>Courses</h1>
-<ol>
-<li> Power Energy System</li>
-  <ul>
-    <li> Distribution of electricity</li>
-    <li> Transformers</li>
-  </ul>
-<li> Matlab Programming</li>
-  <ul>
-    <li> Artificial Neural Networky</li>
-    <li> Image Encryption and Verification</li>
-  </ul>
-</ol>
+    <h1>Courses</h1>
+    <button id="getReq">Click here to get request</button>
+    <button id="postReq">Click here to post request</button>
+    <h2></h2>
 
-<div class="container">
-    <form action="" id ="formFill" name="formFill"> 
-      <label for="Name">Name</label>
-      <input type="text" name="Name" id="Name" >
+    <ol>
+      <li>Power Energy System</li>
+      <ul>
+        <li>Distribution of electricity</li>
+        <li>Transformers</li>
+      </ul>
+      <li>Matlab Programming</li>
+      <ul>
+        <li>Artificial Neural Networky</li>
+        <li>Image Encryption and Verification</li>
+      </ul>
+    </ol>
 
-      <label for="phoneNumber">Phone Number</label>
-      <input type="text" name="phoneNumber" id="phoneNumber" >
+    <div class="container">
+      <form action="" id="formFill" name="formFill">
+        <label for="Name">Name</label>
+        <input type="text" name="Name" id="Name" />
 
-      <input type="radio" name="Bachelors" id="Bachelors">
-      <label for="Bachelors">Bachelors</label>
-      <input type="radio" name="Masters" id="Masters">
-      <label for="Masters">Masters</label>
-      <br>
+        <label for="phoneNumber">Phone Number</label>
+        <input type="text" name="phoneNumber" id="phoneNumber" />
 
-      <label for="Desc">Description</label>
-      <input type="text" name="Desc" id="Desc">
+        <input type="radio" name="Bachelors" id="Bachelors" />
+        <label for="Bachelors">Bachelors</label>
+        <input type="radio" name="Masters" id="Masters" />
+        <label for="Masters">Masters</label>
+        <br />
 
-      <input type="checkbox" name="Physics" id="Physics">
-      <label for="Physics">Physics</label>
-      <input type="checkbox" name="Chemistry" id="Chemistry">
-      <label for="Chemistry">Chemistry</label>
-      <input type="checkbox" name="Biology" id="Biology">
-      <label for="Biology">Biology</label>
-      <input type="checkbox" name="Maths" id="Maths">
-      <label for="Maths">Maths</label>
+        <label for="Desc">Description</label>
+        <input type="text" name="Desc" id="Desc" />
 
-      <input type="submit" value="submit" id="submit">
+        <input type="checkbox" name="Physics" id="Physics" />
+        <label for="Physics">Physics</label>
+        <input type="checkbox" name="Chemistry" id="Chemistry" />
+        <label for="Chemistry">Chemistry</label>
+        <input type="checkbox" name="Biology" id="Biology" />
+        <label for="Biology">Biology</label>
+        <input type="checkbox" name="Maths" id="Maths" />
+        <label for="Maths">Maths</label>
 
-    </form>
-  </div>
+        <input type="submit" value="submit" id="submit" />
+      </form>
+    </div>
 
-  <script src="main.js"></script>
-</body>
+    <!-- <script src="main.js"></script> -->
+  </body>
 </html>
