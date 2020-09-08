@@ -13,6 +13,8 @@ try {
   
 } catch (err) {
     console.log(`Number is between ${err}`)
+}finally {
+    console.log("You have completed the project")
 }
 
 
