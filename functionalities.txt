@@ -1,0 +1,8 @@
+In the first Experiment, the functionalities which need to be put are as follows:
+
+1. A dropdown with English, Hindi and Select Language as the options.
+2. Clickable buttons pertaining to each word of a sentence which has been been jumbled and need to be put in for the sentence to be syntactically and semantically correct.
+3. After clicking on any button, the corresponding word should display in a line and a Reform the Sentence button should be seen so as to reset the whole thing.
+4. Only when all the buttons are clicked, a button named Check the correctness of the sentence is to be displayed.
+5. For wrong answers, the right answers should be displayed after a button Click for Solution is pressed. Nothing is to be done for a correct answer.
+6. Everytime the page is loaded, the order of the buttons containing the words is to be jumbled.
