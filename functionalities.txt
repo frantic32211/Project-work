@@ -8,7 +8,10 @@ In the first Experiment, the functionalities which need to be put are as follows
 6. Everytime the page is loaded, the order of the buttons containing the words is to be jumbled.
 
 
-For adding buttons, we will store the sentences in JSON format and the using spli, sort, random and join functions, we will get different words of the sentence.
+For adding buttons, we will store the sentences in JSON format and the using split, sort, random and join functions, we will get different words of the sentence.
 Then we will put those words inside button tags and display it in the DOM.
 
 In the HTML file, we will create a select tag and have three options as Select language, english and hindi which when selected will display a sentence saying “Form a sentence (Declarative or Interrogative or any other type) from the given words(select the buttons in proper order)".
+
+Now the words selected randomly from random sentences needs to diplay in html page which have the functionality of clickable buttons.
+Here, we need two random functions, one for selecting random sentence and the second for selecting the random words.
