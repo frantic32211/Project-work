@@ -6,3 +6,7 @@ In the first Experiment, the functionalities which need to be put are as follows
 4. Only when all the buttons are clicked, a button named Check the correctness of the sentence is to be displayed.
 5. For wrong answers, the right answers should be displayed after a button Click for Solution is pressed. Nothing is to be done for a correct answer.
 6. Everytime the page is loaded, the order of the buttons containing the words is to be jumbled.
+
+
+For adding buttons, we will store the sentences in JSON format and the using spli, sort, random and join functions, we will get different words of the sentence.
+Then we will put those words inside button tags and display it in the DOM.
