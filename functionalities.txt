@@ -10,3 +10,5 @@ In the first Experiment, the functionalities which need to be put are as follows
 
 For adding buttons, we will store the sentences in JSON format and the using spli, sort, random and join functions, we will get different words of the sentence.
 Then we will put those words inside button tags and display it in the DOM.
+
+In the HTML file, we will create a select tag and have three options as Select language, english and hindi which when selected will display a sentence saying “Form a sentence (Declarative or Interrogative or any other type) from the given words(select the buttons in proper order)".
