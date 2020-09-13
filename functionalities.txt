@@ -15,3 +15,6 @@ In the HTML file, we will create a select tag and have three options as Select l
 
 Now the words selected randomly from random sentences needs to diplay in html page which have the functionality of clickable buttons.
 Here, we need two random functions, one for selecting random sentence and the second for selecting the random words.
+
+Now, once a word button is clicked, the "formed sentence" is displayed below the button and the word of the elected is displayed on the screen. 
+Also, "re-form sentence" button commes up which acts as a reset button for the words choosen.
