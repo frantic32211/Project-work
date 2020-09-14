@@ -21,3 +21,5 @@ Also, "re-form sentence" button commes up which acts as a reset button for the w
 
 For the "re-form the sentence" button, if the burron is clicked, it should reset the chosen words in the same order as it was before clicking and make the same jumbled sentence we got earlier.
 It should vanish everything except the buttons with the jumbled sentence.
+
+Now, we need second button which tells the correctness of the sentence. This button should be visible only after all the buttons are removed from the jumbled sentence and placed in the below sentence.
