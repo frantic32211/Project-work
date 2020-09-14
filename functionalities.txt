@@ -26,3 +26,5 @@ Now, we need second button which tells the correctness of the sentence. This but
 
 For the functionality of the "check correctness of the sentence" button, when pressed we need to compare the sentence formed with the corpus sentences provided.
 If the sentence is right, we need to display "right answer" and for wrong, "wrong answer" is displayed with a button for "get the correct sentence"
+
+For the "get the correct setence" button, we need to show all the correct sentences form the corpus and also ensure that the text of the "get the correct sentence" changes to "hide the correct sentence"
