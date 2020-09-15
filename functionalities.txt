@@ -28,3 +28,5 @@ For the functionality of the "check correctness of the sentence" button, when pr
 If the sentence is right, we need to display "right answer" and for wrong, "wrong answer" is displayed with a button for "get the correct sentence"
 
 For the "get the correct setence" button, we need to show all the correct sentences form the corpus and also ensure that the text of the "get the correct sentence" changes to "hide the correct sentence"
+
+All the other few functionalities that must be present in our code for the Simulation Experiment are implemented in the code.
